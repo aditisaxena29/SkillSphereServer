@@ -38,11 +38,11 @@ import payment from "./routes/paymentRoutes.js";
 
  export default app;
 
-// app.get("/", (req, res) =>
-//   res.send(
-//     `<h1>Site is Working. click <a href=${process.env.FRONTEND_URL}>here</a> to visit frontend.</h1>`
-//   )
-// );
+app.get("/", (req, res) =>
+  res.send(
+    `<h1>Site is Working. click <a href=${process.env.FRONTEND_URL}>here</a> to visit frontend.</h1>`
+  )
+);
 
 //always use at the end
 app.use(ErrorMiddleware);
